@@ -1,15 +1,6 @@
-<p>
-{{game[0].id}}
-{{game[0].name}}
-{{game[0].rating}}
-</p>
-<p>
-{{game[1].id}}
-{{game[1].name}}
-{{game[1].rating}}
-</p>
-<p>
-{{game[2].id}}
-{{game[2].name}}
-{{game[2].rating}}
-</p>
+
+<p *ngFor="let currentGame of game">
+  {{currentGame.id}}
+  {{currentGame.name}}
+  {{currentGame.rating}}
+</p> 
