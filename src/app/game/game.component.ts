@@ -10,13 +10,14 @@ export class GameComponent implements OnInit {
 
   game: Game;
 
-  constructor() { }
+  constructor(id, name, rating) { 
+    this.id = id;
+    this.name = name;
+    this.rating = rating;
+  }
 
   ngOnInit() {
-    this.game = new Game();
-    this.game.id = 1;
-    this.game.name = 'Archer';
-    this.game.rating = 4;
+    this.game = new Game(1, 'Archer', 4);
   }
 
 }
