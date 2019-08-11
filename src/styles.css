@@ -1,1 +1,6 @@
 /* Add application styles & imports to this file! */
+body {
+  font-family: Lato;
+  background-color: #1d2126;
+  color: white;
+}
