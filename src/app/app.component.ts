@@ -9,7 +9,7 @@ import { Game } from './game/game'
 export class AppComponent implements OnInit {
 title = "GameShow";
 
-game: Game[];
+game: Game[] = [];
 
 constructor() {
 }
