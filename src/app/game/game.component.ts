@@ -8,16 +8,15 @@ import { Game } from './game'
 })
 export class GameComponent implements OnInit {
 
-  game: Game;
+  game: Game[] = [];
 
-  constructor(id, name, rating) { 
-    this.id = id;
-    this.name = name;
-    this.rating = rating;
+  constructor() { 
   }
 
   ngOnInit() {
-    this.game = new Game(1, 'Archer', 4);
+    this.game[0] = new Game(1, 'Archer', 4);
+    this.game[1] = new Game(2, 'Pokemon', 4);
+    this.game[2] = new Game(3, 'PubG', 4.5);
   }
 
 }
