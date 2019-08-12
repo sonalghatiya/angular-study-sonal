@@ -12,6 +12,10 @@ export class GameComponent implements OnInit {
     game.rating++;
   }
 
+  decreaseRating(game: Game[]) {
+    game.rating--;
+  }
+
   constructor() { 
   }
 
