@@ -8,6 +8,10 @@ import { Game } from './game'
 })
 export class GameComponent implements OnInit {
   @Input() game: Game[];
+  increaseRating(game: Game[]) {
+    game.rating++;
+  }
+
   constructor() { 
   }
 
