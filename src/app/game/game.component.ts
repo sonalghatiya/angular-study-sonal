@@ -8,12 +8,12 @@ import { Game } from './game'
 })
 export class GameComponent implements OnInit {
   @Input() game: Game[];
-  increaseRating(game: Game[]) {
-    game.rating++;
+  increaseRating(CurrentGame: Game[]) {
+    CurrentGame.rating++;
   }
 
-  decreaseRating(game: Game[]) {
-    game.rating--;
+  decreaseRating(CurrentGame: Game[]) {
+    CurrentGame.rating--;
   }
 
   constructor() { 
